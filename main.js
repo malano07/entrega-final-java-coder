@@ -201,7 +201,7 @@ checkDomicilio.addEventListener('change', actualizarTotales);
  const botonSuscribir = document.getElementById('boton-suscribir');
     
     botonSuscribir.addEventListener('click', (event) => {
-        event.preventDefault(); // Evitar que se envíe el formulario inmediatamente
+        event.preventDefault(); 
         
         Swal.fire({
             icon: 'success',
@@ -210,7 +210,7 @@ checkDomicilio.addEventListener('change', actualizarTotales);
             confirmButtonText: 'Aceptar',
         }).then((result) => {
             if (result.isConfirmed) {
-                // Aquí puedes enviar el formulario si lo deseas
+                
                 botonSuscribir.closest('form').submit();
             }
         });
